@@ -173,6 +173,7 @@ void work()
     cin >> s;
     for (string::iterator iter = s.begin(); iter != s.end(); iter++)
     {
+        //依次将字符压入栈和队列中
         if (*iter == '#')
             break;
         stackPush(st, *iter);
@@ -180,6 +181,7 @@ void work()
     }
     while (!stackEmpty(st) && !queueEmpty(qu))
     {
+        //依次将字符出栈出队列,判断是否相等
         if (stackTop(st) != queueFront(qu))
         {
             cout << "不是回文串\n";
