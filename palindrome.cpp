@@ -190,5 +190,7 @@ void work()
         stackPop(st);
         queuePop(qu);
     }
+    stackFree(st);
+    queueFree(qu);
     cout << "是回文串\n";
 }
