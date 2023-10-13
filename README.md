@@ -22,3 +22,7 @@
 ```
 
 没有释放队列结构的空间
+
+## 查找回文子串算法
+
+[Manacher Algorithm](https://refrigerator.navihx.top/posts/longest-palindrome/), 相对于朴素算法更优的算法, 利用已经计算出的回文半径.
